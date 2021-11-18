@@ -1,5 +1,4 @@
 # MongoDB Access and CRUD test
-
 from pymongo import MongoClient
 
 # conda install -c anaconda pymongo
@@ -16,3 +15,5 @@ collection.insert_one(data)
 
 # MongoDB > database > collection > document
 # 우리은행 > 우리은행 광주지점 > 예금 > 50,000 입급: 최철웅
+
+# CRUD => Create, Read, Update, Delete
