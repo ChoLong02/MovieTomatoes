@@ -7,6 +7,10 @@ from pymongo import MongoClient
 # MongoDB Connection
 def conn_mongo():
     client = MongoClient('localhost', 27017)  # (IP address, Port)
+    client = MongoClient(host='host',
+                         port=27017,
+                         username='user',
+                         password='password')
     db = client['local']                      # Allocating 'local' DB
     collection = db.get_collection('movie')   # Allocating 'movie' Collection
     return collection
